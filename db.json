@@ -1,0 +1,34 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Angular 14",
+      "description": "For front end developer",
+      "fee": 1250000
+    },
+    {
+      "id": 2,
+      "name": "React JS",
+      "description": "For Front End developer",
+      "fee": 1100000
+    },
+    {
+      "id": 3,
+      "name": "Vue JS",
+      "description": "For any, fast and best",
+      "fee": 1520000
+    },
+    {
+      "id": 4,
+      "name": "Svelte JS",
+      "description": "Simple and clean, amagazing Gob job",
+      "fee": 1532000
+    },
+    {
+      "id": 5,
+      "name": "JS Basic",
+      "description": "For All, For You and for we",
+      "fee": 1999999
+    }
+  ]
+}

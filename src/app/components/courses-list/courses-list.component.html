@@ -1,0 +1,25 @@
+<div class="card mb-3 mt-3  border border-primary">
+  <div class="card-header text-white fw-bold bg-primary">Courses Management</div>
+  <div class="card-body">
+    
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of courses; let i = index">
+          <td class="fw-bold">{{i+1}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.fee | number | currencyvnd}}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+</div>
