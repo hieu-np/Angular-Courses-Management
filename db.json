@@ -10,7 +10,7 @@
       "id": 2,
       "name": "React JS",
       "description": "For Front End developer",
-      "fee": 1100000
+      "fee": 0
     },
     {
       "id": 3,
@@ -28,7 +28,37 @@
       "id": 5,
       "name": "JS Basic",
       "description": "For All, For You and for we",
-      "fee": 1999999
+      "fee": 0
+    },
+    {
+      "id": 6,
+      "name": "Php",
+      "description": "For front end developer",
+      "fee": 0
+    },
+    {
+      "id": 7,
+      "name": "HTML",
+      "description": "For Front End developer",
+      "fee": 1190000
+    },
+    {
+      "id": 8,
+      "name": "CSS",
+      "description": "For any, fast and best",
+      "fee": 6990000
+    },
+    {
+      "id": 9,
+      "name": "SCSS",
+      "description": "Simple and clean, amagazing Gob job",
+      "fee": 1532999
+    },
+    {
+      "id": 10,
+      "name": "Java",
+      "description": "For All, For You and for we",
+      "fee": 0
     }
   ]
 }

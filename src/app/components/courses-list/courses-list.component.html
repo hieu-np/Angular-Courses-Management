@@ -7,16 +7,44 @@
         <tr>
           <th>#</th>
           <th>Name</th>
-          <th>Description</th>
+          <th style="display: flex; justify-content: space-between;">
+            <div>Description </div>
+            <div>
+              <span class="badge bg-primary pointer hover-badge"
+              routerLink="/courses/add"
+              ><i class="fa-solid fa-plus"></i> Add Courses</span>
+              <!-- <button>Add Task</button> -->
+            </div>
+          </th>
           <th>Price</th>
+          <th>Actions</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let item of courses; let i = index">
           <td class="fw-bold">{{i+1}}</td>
-          <td>{{item.name}}</td>
+          <td class="fw-bold">{{item.name}}</td>
           <td>{{item.description}}</td>
-          <td>{{item.fee | number | currencyvnd}}</td>
+          <td
+          class="fw-bold"
+            [ngClass]="item.fee > 0 ? 'text-primary' : 'text-success'"
+          >{{item.fee > 0 ? (item.fee | number | currencyvnd) : 'Free'}}</td>
+
+          <td>
+            <div class="btn-group" style="display: flex; justify-content: center;" role="group" aria-label="Basic example">
+              <button type="button" class="width-normal btn btn-outline-warning btn-sm"
+                
+              >
+                <i class="fa-solid fa-pen-to-square"></i>
+              </button>
+              <button
+                
+                type="button" class="width-normal btn btn-outline-danger btn-sm">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+              
+            </div>
+          </td>
         </tr>
       </tbody>
     </table>
