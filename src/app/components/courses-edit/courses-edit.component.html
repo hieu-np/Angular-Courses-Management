@@ -1,1 +1,67 @@
-<p>courses-edit works!</p>
+<div class="row d-flex-jc-center">
+  <div class="col col-6">
+    <div class="card mb-3 mt-3 border border-success">
+      <div class="card-header text-white fw-bold bg-success">Edit Courses</div>
+      <div class="card-body">
+        <form role="form">
+          <div class="form-group mb-3">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              [(ngModel)]="course.name"
+            />
+          </div>
+          <div class="form-group mb-3">
+            <label for="description">Description</label>
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="3"
+              class="form-control"
+              [(ngModel)]="course.description"
+            ></textarea>
+          </div>
+
+          <div class="form-group mb-3">
+            <label for="fee">Price</label>
+            <input
+              type="number"
+              name="fee"
+              id="fee"
+              class="form-control"
+              [(ngModel)]="course.fee"
+            />
+          </div>
+          <div class="form-group text-center">
+            <div class="btn-group">
+              <button
+                type="submit"
+                class="btn btn-primary"
+                (click)="onEditCourse()"
+                [disabled]="spiner"
+              >
+                <div *ngIf="!spiner"><i class="fa-solid fa-plus"></i> Add Course</div>
+                <div  *ngIf="spiner">
+                  <div class="spinner-border spinner-border-sm text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div> Saving...
+                </div>
+              </button>
+
+              <button
+                *ngIf="!spiner"
+                routerLink="/courses" class="btn btn-danger">
+                <i class="fa-solid fa-xmark"></i>
+                Cancel
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

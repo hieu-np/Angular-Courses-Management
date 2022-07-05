@@ -12,7 +12,7 @@
             <div>
               <span class="badge bg-primary pointer hover-badge"
               routerLink="/courses/add"
-              ><i class="fa-solid fa-plus"></i> Add Courses</span>
+              ><i class="fa-solid fa-plus"></i> Add Course</span>
               <!-- <button>Add Task</button> -->
             </div>
           </th>
@@ -32,13 +32,15 @@
 
           <td>
             <div class="btn-group" style="display: flex; justify-content: center;" role="group" aria-label="Basic example">
-              <button type="button" class="width-normal btn btn-outline-warning btn-sm"
+              <button 
+                [routerLink]="['/courses', item.id, 'edit']"
+                type="button" class="width-normal btn btn-outline-warning btn-sm"
                 
               >
                 <i class="fa-solid fa-pen-to-square"></i>
               </button>
               <button
-                
+                (click)="onDeleteCourse(item.id)"
                 type="button" class="width-normal btn btn-outline-danger btn-sm">
                 <i class="fa-solid fa-trash-can"></i>
               </button>

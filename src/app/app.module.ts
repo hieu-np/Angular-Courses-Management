@@ -11,6 +11,7 @@ import { CoursesAddComponent } from './components/courses-add/courses-add.compon
 import { CoursesEditComponent } from './components/courses-edit/courses-edit.component';
 import { CourseService } from './services/course.service';
 import { CurrencyvndPipe } from './pipes/currencyvnd.pipe';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { CurrencyvndPipe } from './pipes/currencyvnd.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     CourseService

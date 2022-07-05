@@ -28,7 +28,7 @@
       "id": 5,
       "name": "JS Basic",
       "description": "For All, For You and for we",
-      "fee": 0
+      "fee": 1
     },
     {
       "id": 6,
@@ -59,6 +59,36 @@
       "name": "Java",
       "description": "For All, For You and for we",
       "fee": 0
+    },
+    {
+      "id": 11,
+      "name": "Khoá học FullStack Siêu cấp vip pro max",
+      "fee": 0,
+      "description": "abc"
+    },
+    {
+      "id": 12,
+      "name": "Khoá học FullStack Siêu cấp vip pro max",
+      "fee": 0,
+      "description": "Ở đây chỉ chém gió chứ thật chất không biết khoá học nào full stack cả, nên tất nhiên nó miễn phí rồi."
+    },
+    {
+      "id": 13,
+      "name": "Ok vậy nhen",
+      "fee": 4,
+      "description": "Supper Idol\n"
+    },
+    {
+      "id": 14,
+      "name": "Khoá học chém gió xuyên lục địa",
+      "fee": 1234567890,
+      "description": "abc"
+    },
+    {
+      "id": 15,
+      "name": "Khoá học Android",
+      "fee": 200000000,
+      "description": "fadfda"
     }
   ]
 }
